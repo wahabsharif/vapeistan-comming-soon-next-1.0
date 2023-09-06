@@ -12,9 +12,9 @@ import { SOCIAL_PROFILES } from "common/data/social-share/six";
 import { SocialShare } from "../components";
 
 // images
-import BG from "common/static/images/bg.png";
+import BG from "common/static/images/bg.webp";
 
-const IndexPage = () => (
+const Home = () => (
   <ParallaxProvider>
     <React.Fragment>
       <NextSeo
@@ -35,7 +35,7 @@ const IndexPage = () => (
         </LogoImageContainer>
         <FooterSection>
           <MainContentSection>
-            <h6>COMING SOON</h6>
+            <h6 className="text-center">COMING SOON</h6>
           </MainContentSection>
           <SocialShare items={SOCIAL_PROFILES} />
           <p>
@@ -47,4 +47,4 @@ const IndexPage = () => (
   </ParallaxProvider>
 );
 
-export default IndexPage;
+export default Home;
